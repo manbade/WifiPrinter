@@ -1,0 +1,23 @@
+{
+  "name": "TelnetPrinter",
+  "version": "1.0.0",
+  "keywords": "esp8266, debug, telnet",
+  "description": "Adds a telnet server to your ESP8266 to print debug messages",
+  "homepage": "https://github.com/bertmelis/TelnetPrinter",
+  "license": "LGPL",
+  "authors":
+  {
+    "name": "Bert Melis",
+    "url": "https://github.com/bertmelis",
+    "maintainer": true
+  },
+  "frameworks": "arduino",
+  "platforms": "espressif8266",
+  "dependencies": [
+  ],
+  "export": {
+    "include": [
+      "keywords.txt"
+    ]
+  }
+}
