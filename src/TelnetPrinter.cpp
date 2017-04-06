@@ -24,7 +24,7 @@ void TelnetPrinter::loop() {
     if (!serverClient || !serverClient.connected()) {
       if (serverClient) serverClient.stop(); //stop second client, only 1 supported
       serverClient = telnetServer.available();
-      serverClient.flush(); //start with clean shee
+      serverClient.flush(); //start with clean sheet
       showInfo();
       //empty input buffer
       while(serverClient.available()) {
@@ -43,7 +43,7 @@ void TelnetPrinter::loop() {
         if (_command.length() > 0) {
           handle();
         }
-        _command = ""; // Init it for next command
+        _command = ""; // Init for next command
       } else if (isPrintable(character)) {
         // Concat
         _command.concat(character);
