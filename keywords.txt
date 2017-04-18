@@ -1,0 +1,16 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+TelnetPrinter	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	KEYWORD2
+loop	KEYWORD2
+stop	KEYWORD2
+enableReset	KEYWORD2
+isActive	KEYWORD2
+write	KEYWORD2
