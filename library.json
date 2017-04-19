@@ -1,9 +1,9 @@
 {
-  "name": "TelnetPrinter",
-  "version": "1.0.0",
+  "name": "WifiPrinter",
+  "version": "1.1.0",
   "keywords": "esp8266, debug, telnet",
-  "description": "Adds a telnet server to your ESP8266 to print debug messages",
-  "homepage": "https://github.com/bertmelis/TelnetPrinter",
+  "description": "Adds a telnet-like server to your ESP8266 to print debug messages",
+  "homepage": "https://github.com/bertmelis/WifiPrinter",
   "license": "LGPL",
   "authors":
   {

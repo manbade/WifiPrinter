@@ -2,7 +2,7 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-TelnetPrinter	KEYWORD1
+WifiPrinter	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)

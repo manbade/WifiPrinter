@@ -16,17 +16,20 @@
   You should have received a copy of the GNU Lesser General Public
   License along with this library; if not, write to the Free Software
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
- 
+
  (C) 2015 Rudolf Reuter www.rudiswiki.de/wiki9 --> original work
  (C) 2016 JoaoLopesF https://github.com/JoaoLopesF --> RemoteDebug library
  (C) 2017 Bert Melis https://github.com/bertmelis --> stripped down version
- 
- 
- */
- 
 
-class TelnetPrinter: public Print{
+
+ */
+
+
+class WifiPrinter: public Print{
+
   public:
+    WifiPrinter();
+    WifiPrinter(uint16_t port);
     void begin();
     void stop();
     void loop();
@@ -37,11 +40,14 @@ class TelnetPrinter: public Print{
   	virtual size_t write(uint8_t);
 
   private:
-    boolean _connected = false;
-    boolean _resetCommandEnabled = false;
-    String _command = "";					// Command received
-    boolean _newLine = true;				// New line write ?
-    boolean _showTime = false;				// Show time in millis
+    WiFiServer _wifiServer;
+    WiFiClient _wifiClient;
+    boolean _connected;
+    boolean _resetCommandEnabled;
+    String _buffer;
+    String _command;					// Command received
+    boolean _newLine;				// New line write ?
+    boolean _showTime;				// Show time in millis
     void showInfo();
     void handle();
 };
