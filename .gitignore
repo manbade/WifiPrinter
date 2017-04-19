@@ -1,6 +1,0 @@
-.gcc-flags.json
-.pioenvs
-.piolibdeps
-.clang_complete
-.gitignore
-lib/readme.txt
