@@ -1,7 +1,7 @@
 #if defined(ESP8266)
 #include <ESP8266WiFi.h>
 #elif defined(ESP32)
-#include <wifi.h>
+#include <WiFi.h>
 #else
 #error "only compatible with ESP8266 or ESP32"
 #endif
